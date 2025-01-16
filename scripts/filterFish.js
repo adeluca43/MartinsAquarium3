@@ -31,4 +31,4 @@ export const regularFish = () => {
     }
 
     return regulars;
-};
+}; 

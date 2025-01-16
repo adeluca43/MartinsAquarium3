@@ -1,4 +1,3 @@
-import { database } from './aquariumData.js';
 
 export const generateFishHTML = (fishArray, categoryName) => {
     const fishHTML = fishArray
