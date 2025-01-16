@@ -43,7 +43,7 @@ export const database = {
         {
             name: "Goldie",
             species: "Goldfish",
-            length: 6,
+            length: 7,
             location: "Ice Sea",
             diet: "Herbivore",
             image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxACkr-zoKpNqeeUWa3vHQtnPu_DfU7eF7LA&s"
@@ -59,7 +59,7 @@ export const database = {
           {
             name: "Bubbles",
             species: "Goldfish",
-            length: 23, // Divisible by 3
+            length: 3,
             location: "Koi Pond",
             diet: "Herbivore",
             image: "https://example.com/bubbles.jpg"
@@ -67,7 +67,7 @@ export const database = {
         {
             name: "Flipper",
             species: "Dolphin",
-            length: 10, // Divisible by 3 and 5
+            length: 7,
             location: "Pacific Ocean",
             diet: "Carnivore",
             image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSefqQlz-8mNeA91zk7o3wzpE8H8BhDMBSnMw&s"
@@ -75,7 +75,7 @@ export const database = {
         {
             name: "Spike",
             species: "Pufferfish",
-            length: 1, // Not divisible by 3 or 5
+            length: 6,
             location: "Caribbean Sea",
             diet: "Omnivore",
             image: "https://example.com/spike.jpg"
