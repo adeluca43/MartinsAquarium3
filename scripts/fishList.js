@@ -1,28 +1,30 @@
 import { database } from './aquariumData.js';
 
-export const fishList = () => {
-     let html = '<article>'; // Initialize the HTML string 
-
-    html += '<h1>Fish</h1>' //adds header above the fish
-
-    database.fish.forEach(fish => {
-        html += `
+export const generateFishHTML = (fishArray, categoryName) => {
+    const fishHTML = fishArray
+        .map(fish => `
             <section class="fish-card">
                 <h2>${fish.name}</h2>
                 <h3>${fish.species}</h3>
-                <div>Length: ${fish.length} inches</div>
-                <div>Diet: ${fish.diet}</div>
-                <div>Location: ${fish.location}</div>
+                <p>Length: ${fish.length} inches</p>
+                <p>Diet: ${fish.diet}</p>
+                <p>Location: ${fish.location}</p>
                 <div class="image-container">
-                <img src="${fish.image}"> </div>
+                    <img src="${fish.image}">
+                </div>
             </section>
-        `;
-    });
+        `)
+        .join('');
 
-    html += '</article>'; 
+    return `
+        <article class="fish-category">
+            <h1>${categoryName}</h1>
+            ${fishHTML}
+        </article>
+    `;
+};
 
-    return html; 
-}
+
 
 /*loops through each fish in the database.fish array and 
 generates HTML for each fish, wrapping the details

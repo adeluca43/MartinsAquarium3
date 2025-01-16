@@ -1,20 +1,31 @@
-import { fishList } from './fishList.js'
+import { generateFishHTML } from './fishList.js'
 import { tipList } from './tipList.js'
 import { locationList } from './locationList.js'
+import { mostHolyFish, soldierFish, regularFish } from './filterFish.js'
 
-// Generate the fish list
-const fishHTML = fishList()
-// Select the container element
+
+// Generate HTML for all fish categories
+const holyFishHTML = generateFishHTML(mostHolyFish(), 'Most Holy Fish');
+const soldierFishHTML = generateFishHTML(soldierFish(), 'Soldier Fish');
+const regularFishHTML = generateFishHTML(regularFish(), 'Regular Fish');
+
+// Combine all HTML
+const combinedHTML = `${holyFishHTML}${soldierFishHTML}${regularFishHTML}`;
+
+// Update the DOM with the combined HTML
 const fishListContainer = document.getElementById('fishList');
-// Render HTML string to the correct DOM element
-fishListContainer.innerHTML = fishHTML;
+fishListContainer.innerHTML = combinedHTML;
 
-// repeat for tips
-const tipHTML = tipList()
+// Generate and render care tips
+const tipHTML = tipList();
 const tipListContainer = document.getElementById('tipList');
 tipListContainer.innerHTML = tipHTML;
 
-// repeat for location
-const locationHTML = locationList()
+// Generate and render locations
+const locationHTML = locationList();
 const locationListContainer = document.getElementById('locationList');
 locationListContainer.innerHTML = locationHTML;
+
+
+
+

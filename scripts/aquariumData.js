@@ -27,7 +27,7 @@ export const database = {
         {
             name: "Bob",
             species: "Bass",
-            length: 2,
+            length: 3,
             location: "Open Ocean",
             diet: "Omnivore",
             image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5Mf9JoZ9K42gOvGPvh6CAsbr0KGV244ja5w&s"
@@ -35,7 +35,7 @@ export const database = {
         {
             name: "Boney",
             species: "Bonefish",
-            length: 4,
+            length: 5,
             location: "Open Ocean",
             diet: "Omnivore",
             image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJeMkw6AyQAm3v03aiBJ54LGenD1oGVoRtfg&s"
@@ -51,11 +51,91 @@ export const database = {
         {
             name: "Bruce",
             species: "Great White Shark",
-            length: 216,
+            length: 100,
             location: "Ice Sea",
             diet: "Carnivore",
             image: "https://oceana.org/wp-content/uploads/sites/18/shutterstock_366230828_0-scaled-e1687797735342.jpg"
-          }
+          },
+          {
+            name: "Bubbles",
+            species: "Goldfish",
+            length: 23, // Divisible by 3
+            location: "Koi Pond",
+            diet: "Herbivore",
+            image: "https://example.com/bubbles.jpg"
+        },
+        {
+            name: "Flipper",
+            species: "Dolphin",
+            length: 10, // Divisible by 3 and 5
+            location: "Pacific Ocean",
+            diet: "Carnivore",
+            image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSefqQlz-8mNeA91zk7o3wzpE8H8BhDMBSnMw&s"
+        },
+        {
+            name: "Spike",
+            species: "Pufferfish",
+            length: 1, // Not divisible by 3 or 5
+            location: "Caribbean Sea",
+            diet: "Omnivore",
+            image: "https://example.com/spike.jpg"
+        },
+        {
+            name: "Gill",
+            species: "Moorish Idol",
+            length: 2, // Divisible by 3
+            location: "Coral Reef",
+            diet: "Herbivore",
+            image: "https://example.com/gill.jpg"
+        },
+        {
+            name: "Oscar",
+            species: "Oscar Fish",
+            length: 22, // Divisible by 5
+            location: "Amazon River",
+            diet: "Carnivore",
+            image: "https://example.com/oscar.jpg"
+        },
+        {
+            name: "Finley",
+            species: "Betta Fish",
+            length: 8, // Not divisible by 3 or 5
+            location: "Rice Fields",
+            diet: "Carnivore",
+            image: "https://example.com/finley.jpg"
+        },
+        {
+            name: "Benny",
+            species: "Bass",
+            length: 8, // Divisible by 3
+            location: "Lake Michigan",
+            diet: "Omnivore",
+            image: "https://example.com/benny.jpg"
+        },
+        {
+            name: "Glider",
+            species: "Flying Fish",
+            length: 26, // Divisible by 5
+            location: "Open Ocean",
+            diet: "Omnivore",
+            image: "https://example.com/glider.jpg"
+        },
+        {
+            name: "Shadow",
+            species: "Catfish",
+            length: 7, // Divisible by 3
+            location: "Mississippi River",
+            diet: "Omnivore",
+            image: "https://example.com/shadow.jpg"
+        },
+        {
+            name: "Coral",
+            species: "Angelfish",
+            length: 2, // Divisible by 5
+            location: "Great Barrier Reef",
+            diet: "Herbivore",
+            image: "https://example.com/coral.jpg"
+        }
     ],
 tips: [
     {
