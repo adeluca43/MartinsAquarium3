@@ -1,0 +1,37 @@
+/* Main Container */
+main {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 16px;
+    border: 2px solid #ccc;
+    padding: 16px;
+    background-color: #ffffff;
+    gap: 16px;
+  }
+  
+  #fishList {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+}
+
+  
+  /* Tip List: Fixed Width */
+  #tipList {
+    flex: 0 0 250px; /* Fixed width */
+    background-color: #3b9dd6;
+    border: 2px solid #070606;
+    border-radius: 5px;
+    padding: 16px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Location List: Full Width, Below Fish and Tips */
+  #locationList {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    border-top: 2px solid #ccc;
+    padding-top: 16px;
+  }

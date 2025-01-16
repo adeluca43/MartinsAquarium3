@@ -4,19 +4,17 @@ import { locationList } from './locationList.js'
 
 // Generate the fish list
 const fishHTML = fishList()
-
-// Generate the care tips
-const tipHTML = tipList()
-
-// Generate the location list
-const locationHTML = locationList()
-
-// Render each HTML string to the correct DOM element
-document.getElementById('fish-list').innerHTML = fishHTML;
-document.getElementById('tip-list').innerHTML = tipHTML;
-document.getElementById('location-list').innerHTML = locationHTML;
-
+// Select the container element
+const fishListContainer = document.getElementById('fishList');
+// Render HTML string to the correct DOM element
 fishListContainer.innerHTML = fishHTML;
 
-import { tipList } from './tipList.js'
-import { locationList } from './locationList.js'
+// repeat for tips
+const tipHTML = tipList()
+const tipListContainer = document.getElementById('tipList');
+tipListContainer.innerHTML = tipHTML;
+
+// repeat for location
+const locationHTML = locationList()
+const locationListContainer = document.getElementById('locationList');
+locationListContainer.innerHTML = locationHTML;

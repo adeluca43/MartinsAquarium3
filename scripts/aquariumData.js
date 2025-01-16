@@ -6,7 +6,7 @@ export const database = {
             length: 3,
             location: "Great Barrier Reef",
             diet: "Omnivore",
-            image: "https://example.com/images/nemo.jpg"
+            image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFQAAqr7e5T1EXKzauHn71CeQd5TPfpJOUuw&s"
         },
         {
             name: "Dory",
@@ -14,47 +14,86 @@ export const database = {
             length: 5,
             location: "Great Barrier Reef",
             diet: "Omnivore",
-            image: "https://example.com/images/dory.jpg"
+            image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCS-0dOENJ36esMjZdiADZrAu45pCCC_c0rQ&s"
         },
         {
-            name: "One",
+            name: "Mr. Fish",
             species: "trout",
             length: 3,
             location: "Great Barrier Reef",
             diet: "Omnivore",
-            image: "https://www.takemefishing.org/apache-trout/"
+            image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9sgf33-A-PiPzhvLiOWMg5u7f7kWKMWGFaQ&s"
         },
         {
-            name: "Two",
+            name: "Bob",
             species: "Bass",
             length: 2,
-            location: "Great Barrier Reef",
+            location: "Open Ocean",
             diet: "Omnivore",
-            image: "https://fishingbooker.com/fish/bass-largemouth"
+            image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5Mf9JoZ9K42gOvGPvh6CAsbr0KGV244ja5w&s"
         },
         {
-            name: "Three",
+            name: "Boney",
             species: "Bonefish",
             length: 4,
-            location: "Great Barrier Reef",
+            location: "Open Ocean",
             diet: "Omnivore",
-            image: "https://fishingbooker.com/fish/bonefish"
+            image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJeMkw6AyQAm3v03aiBJ54LGenD1oGVoRtfg&s"
         },
         {
-            name: "Four",
-            species: "Alligator Gar",
-            length: 1,
-            location: "Great Barrier Reef",
-            diet: "Omnivore",
-            image: "https://www.takemefishing.org/alligator-gar/"
-        },
+            name: "Goldie",
+            species: "Goldfish",
+            length: 6,
+            location: "Ice Sea",
+            diet: "Herbivore",
+            image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxACkr-zoKpNqeeUWa3vHQtnPu_DfU7eF7LA&s"
+          },
         {
-            name: "Five",
-            species: "Acadian Redfish",
-            length: 5,
-            location: "Great Barrier Reef",
-            diet: "Omnivore",
-            image: "https://www.fisheries.noaa.gov/species/acadian-redfish"
-        }
-    ]
+            name: "Bruce",
+            species: "Great White Shark",
+            length: 216,
+            location: "Ice Sea",
+            diet: "Carnivore",
+            image: "https://oceana.org/wp-content/uploads/sites/18/shutterstock_366230828_0-scaled-e1687797735342.jpg"
+          }
+    ],
+tips: [
+    {
+        topic: "Water Temperature",
+        text: "Maintain a consistent water temperature between 75-80°F (24-27°C)."
+    },
+    {
+        topic: "Filtration",
+        text: "Ensure proper filtration to maintain clean water."
+    },
+    {
+        topic: "Feeding",
+        text: "Remember to always feed your fishy."
+    },
+    {
+        topic: "Lighting",
+        text: "Fish light daylight and nightlight."
+    },
+    {
+        topic: "Water Changes",
+        text: "Keep the water clear, brown water is smelly."
+    }
+],
+locations: [
+    {
+        name: "Great Barrier Reef",
+        country: "Australia",
+        description: "The Big Ocean has the largest fish in all the world."
+    },
+    {
+        name: "Open Ocean",
+        country: "America",
+        description: "The Best Ocean has all the best fish and swimming in the world."
+    },
+    {
+        name: "Ice Sea",
+        country: "Russia",
+        description: "The Ice Sea has the coldest water and the most frozen fish every year."
+    },
+]
 }
